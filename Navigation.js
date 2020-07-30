@@ -12,13 +12,14 @@ class Navigation extends React.Component {
     }
   }
   const RootStack = createStackNavigator({
-    foodForm: {
+      foodForm: {
       screen: foodForm,
+      navigationOptions: { headerShown: false, }
       },
 
     postScreen: {
       screen: getApi,
-      navigationOptions: { header: null }
+      navigationOptions: { headerShown: false, }
      },
    
 
@@ -27,6 +28,7 @@ class Navigation extends React.Component {
 
      Foodlist: {
       screen: Foodlist,
+     
      
      }
 
